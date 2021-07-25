@@ -1,5 +1,7 @@
 # Project Road Map:
 
+As we were asked to do, I found a code from a previous group of students in the ksu-is group to use as my example repository. The code itself is well made and the comments made the sample really easy to follow. I inserted the code itself into jupyter notebooks and it ran on the first try. I'm really looking forward to using this code to my advantage to perfect my Stress-Off program!
+
 # Sprint 1
 
 - [X] Each person should have established a Github account and connected to our class organization (KSU-IS) in Github.
