@@ -106,3 +106,36 @@ while True:
           if symptom1 != "1" or "0":
                print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
                symptom1 = input("Within the last few days or hours, have you had any unusual chest pains? ")
+#End symptom 6
+
+#Begin question for symptom 7
+symptom3 = input("Within the last few days or hours, have you felt more nervous than usual or consistent nervousness?")
+while True:
+      if symptom1 == "1":
+          user_input += ("1")
+          user_symptoms.append("Becoming easily agitated")
+          break
+      elif symptom1 == "0":
+          break
+      else:
+          if symptom1 != "1" or "0":
+               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
+               symptom1 = input("Within the last few days or hours, have you felt more nervous than usual or consistent nervousness?")
+#End symptom 7
+
+#Begin question for symptom 8
+symptom3 = input("Within the last few days or hours, have you had a dry mouth or difficulty swallowing? ")
+while True:
+      if symptom1 == "1":
+          user_input += ("1")
+          user_symptoms.append("Becoming easily agitated")
+          break
+      elif symptom1 == "0":
+          break
+      else:
+          if symptom1 != "1" or "0":
+               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
+               symptom1 = input("Within the last few days or hours, have you had a dry mouth or difficulty swallowing? ")
+#End symptom 8
+
+#Begin question for symptom 9
