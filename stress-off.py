@@ -45,7 +45,7 @@ while True:
       else:
           if symptom1 != "1" or "0":
                print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
-               symptom1 = input("Within the last few days or hours, have you noticed yourself gaining an uneasy feeling of overwhelmingness?  ")
+               symptom1 = input("Within the last few days or hours, have you noticed yourself gaining an uneasy feeling of overwhelmingness? ")
 #End symptom 2
 
 #Begin question for symptom 3
@@ -94,7 +94,7 @@ while True:
 #End symptom 5
 
 #Begin question for symptom 6
-symptom3 = input("Within the last few days or hours, have you had any unusual chest pains?")
+symptom3 = input("Within the last few days or hours, have you had any unusual chest pains? ")
 while True:
       if symptom1 == "1":
           user_input += ("1")
@@ -109,7 +109,7 @@ while True:
 #End symptom 6
 
 #Begin question for symptom 7
-symptom3 = input("Within the last few days or hours, have you felt more nervous than usual or consistent nervousness?")
+symptom3 = input("Within the last few days or hours, have you felt more nervous than usual or consistent nervousness? ")
 while True:
       if symptom1 == "1":
           user_input += ("1")
@@ -120,7 +120,7 @@ while True:
       else:
           if symptom1 != "1" or "0":
                print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
-               symptom1 = input("Within the last few days or hours, have you felt more nervous than usual or consistent nervousness?")
+               symptom1 = input("Within the last few days or hours, have you felt more nervous than usual or consistent nervousness? ")
 #End symptom 7
 
 #Begin question for symptom 8
@@ -139,3 +139,15 @@ while True:
 #End symptom 8
 
 #Begin question for symptom 9
+symptom3 = input("Within the last few days or hours, have you experienced constant worrying? ")
+while True:
+      if symptom1 == "1":
+          user_input += ("1")
+          user_symptoms.append("Becoming easily agitated")
+          break
+      elif symptom1 == "0":
+          break
+      else:
+          if symptom1 != "1" or "0":
+               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
+               symptom1 = input("Within the last few days or hours, have you experienced constant worrying? ")
