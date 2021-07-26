@@ -79,3 +79,30 @@ while True:
 #End symptom 4
 
 #Begin question for symptom 5
+symptom3 = input("Within the last few days or hours, have you had any aches or pains that are unusual for you? ")
+while True:
+      if symptom1 == "1":
+          user_input += ("1")
+          user_symptoms.append("Becoming easily agitated")
+          break
+      elif symptom1 == "0":
+          break
+      else:
+          if symptom1 != "1" or "0":
+               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
+               symptom1 = input("Within the last few days or hours, have you had any aches or pains that are unusual for you? ")
+#End symptom 5
+
+#Begin question for symptom 6
+symptom3 = input("Within the last few days or hours, have you had any unusual chest pains?")
+while True:
+      if symptom1 == "1":
+          user_input += ("1")
+          user_symptoms.append("Becoming easily agitated")
+          break
+      elif symptom1 == "0":
+          break
+      else:
+          if symptom1 != "1" or "0":
+               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
+               symptom1 = input("Within the last few days or hours, have you had any unusual chest pains? ")
