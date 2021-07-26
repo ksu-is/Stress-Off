@@ -34,5 +34,16 @@ while True:
 #End symptom 1
 
 #Begin questions for symptom 2
- 
+symptom2 = input("Within the last few days or hours, have you noticed yourself gaining an uneasy feeling of overwhelmingness? ")
+while True:
+      if symptom1 == "1":
+          user_input += ("1")
+          user_symptoms.append("Becoming easily agitated")
+          break
+      elif symptom1 == "0":
+          break
+      else:
+          if symptom1 != "1" or "0":
+               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
+               symptom1 = input("Within the last few days or hours, have you noticed yourself getting easily agitated with others? ")
      
