@@ -169,7 +169,7 @@ while True:
 #End symptom 10
    
 #Begin question for symptom 11
-symptom11 = input("Within the last few days or hours, have you been experiencing the inability to focus on daily tasks? ")
+symptom11 = input("Within the last few days or hours, have you been experiencing a lack of appetite? ")
 while True:
       if symptom11 == "1":
           user_input += ("1")
@@ -180,5 +180,5 @@ while True:
       else:
           if symptom11 != "1" or "0":
                print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
-               symptom11 = input("Within the last few days or hours, have you been experiencing the inability to focus on daily tasks? "                                
+               symptom11 = input("Within the last few days or hours, have you been experiencing a lack of appetite? "                                
                               
