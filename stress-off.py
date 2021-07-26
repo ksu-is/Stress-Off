@@ -33,7 +33,7 @@ while True:
                symptom1 = input("Within the last few days or hours, have you noticed yourself getting easily agitated with others? ")
 #End symptom 1
 
-#Begin questions for symptom 2
+#Begin question for symptom 2
 symptom2 = input("Within the last few days or hours, have you noticed yourself gaining an uneasy feeling of overwhelmingness? ")
 while True:
       if symptom1 == "1":
@@ -45,5 +45,37 @@ while True:
       else:
           if symptom1 != "1" or "0":
                print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
-               symptom1 = input("Within the last few days or hours, have you noticed yourself getting easily agitated with others? ")
-     
+               symptom1 = input("Within the last few days or hours, have you noticed yourself gaining an uneasy feeling of overwhelmingness?  ")
+#End symptom 2
+
+#Begin question for symptom 3
+symptom3 = input("Within the last few days or hours, have you noticed yourself start to avoid others? ")
+while True:
+      if symptom1 == "1":
+          user_input += ("1")
+          user_symptoms.append("Becoming easily agitated")
+          break
+      elif symptom1 == "0":
+          break
+      else:
+          if symptom1 != "1" or "0":
+               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
+               symptom1 = input("Within the last few days or hours, have you noticed yourself start to avoid others? ")
+#End symptom 3
+
+#Begin question for symptom 4
+symptom3 = input("Within the last few days or hours, have you had any temple or frontal lobe headaches? ")
+while True:
+      if symptom1 == "1":
+          user_input += ("1")
+          user_symptoms.append("Becoming easily agitated")
+          break
+      elif symptom1 == "0":
+          break
+      else:
+          if symptom1 != "1" or "0":
+               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
+               symptom1 = input("Within the last few days or hours, have you had any temple or frontal lobe headaches? ")
+#End symptom 4
+
+#Begin question for symptom 5
