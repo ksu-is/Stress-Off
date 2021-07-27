@@ -11,3 +11,6 @@ As we were asked to do, I found a code from a previous group of students in the 
 - [X] In evaluating your codebase, you should have read the code and attempted to run it yourself.
 
 # Sprint 2
+- [X]
+- [X]
+- 
