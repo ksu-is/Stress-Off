@@ -164,3 +164,45 @@ user_symptoms_list =", ".join(user_symptoms)
 #Statement summarizing what the program has gathered from the responses
 print("Based on the answers you gave the program, you have experienced",sum(user_input),"symptom(s) of Stress: \n", user_symptoms_list)
 #Statemend ends
+
+#Recommendations and use of Stress-Off-Link to assist individual
+
+#Recommendations for individuals that have 3 or more symptoms of Stress
+if sum(user_input) > 3:
+    print("You have indicated from your inputs that you have experienced at least 3 of the symptoms of Stress.")
+    
+    if "headaches" in user_symptoms:
+        if "chest pain" in user_symptoms:
+             print("By informing the program that you have experienced chest pain and headaches, two of the more severe symptoms of stress, you should stop what you are doing and take a deep breath.")
+        else:
+            print("By indicating that you have are experiencing headaches, one of the more serious symptoms of Stress, you should stop what you are doing and take a deep breath. ")
+    
+    print("Because of information, we are transmitting you to a website in hopes of relieving your symptoms. ")
+    import stress_off_link_2 as stress_off_link
+    stress_off_link
+
+#Recommendations for individuals that are experiencing less than 3 symptoms of Stress
+if sum(user_input) <= 3:
+    print("You have indicated from your inputs that you have experienced less than 3 of the symptoms of Stress.")
+    
+    if "headaches" in user_symptoms:
+        if "chest pain" in user_symptoms:
+             print("By informing the program that you have experienced chest pain and headaches, two of the more severe symptoms of stress, you should stop what you are doing and take a deep breath.")
+        else:
+            print("By indicating that you have are experiencing headaches, one of the more serious symptoms of Stress, you should stop what you are doing and take a deep breath. ")
+    
+    print("I will also inform you since you are experiencing less than 3 symptoms of stress, that perhaps your symptoms are not stress after all. I would highly advise a visit to your local urgent care facility! ")
+    print("No matter how many symptoms of stress you are experiencing, I highly recommend the link that you are being transmitted too. Remember to breath! ")
+    import stress_off_link_2 as stress_off_link
+    stress_off_link
+
+# End recommendations regarding two most severe symptoms of Stress
+
+
+#Exit statement
+print("Thank for you using my Stress-Off program!")
+print("This project was created and sampled from a former group of KSU students that also took Dr. Thomas' IS3020 course at KSU.")
+print("For every student that is experiencing stress, find an outlet, find someone, find something that can take your mind off of what is running through your head.")
+print("By completing this program, regardless of stress or not, you should have achieved one minute of distraction from what was going on around you!")
+
+#Code ends
