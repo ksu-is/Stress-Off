@@ -7,7 +7,7 @@ print("In answering these questions, this program will inform you of remedies an
 print("The goal in going through this program is to hopefully release some tension and get some assistance to help you in your current situation, I hope you enjoy the program and get what you were hoping out of it!")
      
 # Stress symptoms explained
-webmd_symptoms = ["Becoming easily agitated, feeling overwhelmed, avoiding others, headaches, aches and pains, chest pain, nervousness, dry mouth and difficulty swallowing, constant worrying, inability to focus, changes in appetite"]
+webmd_symptoms = ["Becoming easily agitated, feeling overwhelmed, avoiding others, headaches, aches and pains, chest pain, nervousness, dry mouth and difficulty swallowing, constant worrying"]
 stress_symptoms =  ", ".join (webmd_symptoms)
 #Inform user of the most common symptoms found on Webmd
 print("Based on the research from Webmb, the current most common symptons of stress are:", stress_symptoms)
@@ -38,7 +38,7 @@ symptom2 = input("Within the last few days or hours, have you noticed yourself g
 while True:
       if symptom2 == "1":
           user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
+          user_symptoms.append("feeling overwhelmed")
           break
       elif symptom2 == "0":
           break
@@ -53,7 +53,7 @@ symptom3 = input("Within the last few days or hours, have you noticed yourself s
 while True:
       if symptom3 == "1":
           user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
+          user_symptoms.append("avoiding others")
           break
       elif symptom3 == "0":
           break
@@ -68,7 +68,7 @@ symptom4 = input("Within the last few days or hours, have you had any temple or 
 while True:
       if symptom4 == "1":
           user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
+          user_symptoms.append("headaches")
           break
       elif symptom4 == "0":
           break
@@ -83,7 +83,7 @@ symptom5 = input("Within the last few days or hours, have you had any aches or p
 while True:
       if symptom5 == "1":
           user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
+          user_symptoms.append("aches or pains")
           break
       elif symptom5 == "0":
           break
@@ -98,7 +98,7 @@ symptom6 = input("Within the last few days or hours, have you had any unusual ch
 while True:
       if symptom6 == "1":
           user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
+          user_symptoms.append("chest pain")
           break
       elif symptom6 == "0":
           break
@@ -113,7 +113,7 @@ symptom7 = input("Within the last few days or hours, have you felt more nervous 
 while True:
       if symptom7 == "1":
           user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
+          user_symptoms.append("nervousness")
           break
       elif symptom7 == "0":
           break
@@ -128,7 +128,7 @@ symptom8 = input("Within the last few days or hours, have you had a dry mouth or
 while True:
       if symptom8 == "1":
           user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
+          user_symptoms.append("dry mouth and difficulty swallowing")
           break
       elif symptom8 == "0":
           break
@@ -143,7 +143,7 @@ symptom9 = input("Within the last few days or hours, have you experienced consta
 while True:
       if symptom9 == "1":
           user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
+          user_symptoms.append("constant worrying")
           break
       elif symptom9 == "0":
           break
@@ -153,44 +153,14 @@ while True:
                symptom9 = input("Within the last few days or hours, have you experienced constant worrying? ")
 #End symptom 9
 
-#Begin question for symptom 10
-symptom10 = input("Within the last few days or hours, have you been experiencing the inability to focus on daily tasks? ")
-while True:
-      if symptom10 == "1":
-          user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
-          break
-      elif symptom10 == "0":
-          break
-      else:
-          if symptom10 != "1" or "0":
-               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
-               symptom10 = input("Within the last few days or hours, have you been experiencing the inability to focus on daily tasks? "
-#End symptom 10
-   
-#Begin question for symptom 11
-symptom11 = input("Within the last few days or hours, have you been experiencing a lack of appetite? ")
-while True:
-      if symptom11 == "1":
-          user_input += ("1")
-          user_symptoms.append("Becoming easily agitated")
-          break
-      elif symptom11 == "0":
-          break
-      else:
-          if symptom11 != "1" or "0":
-               print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
-               symptom11 = input("Within the last few days or hours, have you been experiencing a lack of appetite? "                                
-#End symptom 11
-
 #End symptom questions
 
 #Analyze and format user responses#
-for answer in range(0, len(user_responses)):
+for answer in range(0, len(user_input)):
      user_input[answer] = int(user_input[answer])
 user_symptoms_list =, ".join(user_symptoms)
 #End analysis
 
 #Statement summarizing what the program has gathered from the responses
-print("Based on the answers you gave the program, you have experienced",sum(user_input),"symptom(s) of Stress: \n", user_symptom_list)
+print("Based on the answers you gave the program, you have experienced",sum(user_input),"symptom(s) of Stress: \n", user_symptoms_list)
 #Statemend ends
