@@ -181,4 +181,16 @@ while True:
           if symptom11 != "1" or "0":
                print("Input is incorrect, please remember to enter '1' for 'Yes' or '0' for 'No'.")
                symptom11 = input("Within the last few days or hours, have you been experiencing a lack of appetite? "                                
-                              
+#End symptom 11
+
+#End symptom questions
+
+#Analyze and format user responses#
+for answer in range(0, len(user_responses)):
+     user_input[answer] = int(user_input[answer])
+user_symptoms_list =, ".join(user_symptoms)
+#End analysis
+
+#Statement summarizing what the program has gathered from the responses
+print("Based on the answers you gave the program, you have experienced",sum(user_input),"symptom(s) of Stress: \n", user_symptom_list)
+#Statemend ends
