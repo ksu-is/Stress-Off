@@ -158,7 +158,7 @@ while True:
 #Analyze and format user responses#
 for answer in range(0, len(user_input)):
      user_input[answer] = int(user_input[answer])
-user_symptoms_list =, ".join(user_symptoms)
+user_symptoms_list =", ".join(user_symptoms)
 #End analysis
 
 #Statement summarizing what the program has gathered from the responses
