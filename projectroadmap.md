@@ -11,6 +11,7 @@ As we were asked to do, I found a code from a previous group of students in the 
 - [X] In evaluating your codebase, you should have read the code and attempted to run it yourself.
 
 # Sprint 2
-- [X]
-- [X]
-- 
+- [x] Each person should have made small updates that included 6 code commits per person.
+- [X] These commits should include comments explaining what changes were made.
+- [X] Throughout Sprint 2, I was able to go through a majority of the repetitive portion of code on my end. I also fixed multiple missing " errors alongside spelling errors.
+- [X] Tested code multiple times to ensure that code was correct and ran without error.
